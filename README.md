@@ -1,0 +1,1 @@
+Open VS Code -> npm install -> npx playwright install -> npx playwright test
