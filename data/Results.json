@@ -1,1 +1,4 @@
-[{"id":"standard-user","status":"passed"},{"id":"locked-out-user","status":"failed","error":"\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/inventory/\u001b[39m\nReceived string:  \u001b[31m\"https://www.saucedemo.com/\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    14 × locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n"},{"id":"problem-user","status":"passed"},{"id":"performance-glitch-user","status":"passed"}]
+[{"id":"standard-user","status":"passed"}
+,{"id":"locked-out-user","status":"failed"}
+,{"id":"problem-user","status":"passed"},
+{"id":"performance-glitch-user","status":"passed"}]

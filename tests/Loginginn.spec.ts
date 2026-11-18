@@ -33,7 +33,7 @@ console.log("id :", userr.id);
      }catch(error)
      {
         console.log("Error :", (error as Error).message);
-        results.push({id:userr.id, status:'failed', error: (error as Error).message});
+        results.push({id:userr.id, status:'failed'});
      }
 
     })
