@@ -27,6 +27,13 @@ Git merge faetue/playwright-framework
 Git push origin main
 
 
-
+//some commaands
+git switch -c <branch_name>  --create new branch and switch to that branch
+git switch <branch_name>  --switch to the existing branch
+git merge <branch_name>  --merge the branch to the current branch
+git add .  --add all the files to the staging area
+git commit -m "message"  --commit the changes to the local repo
+git push origin <branch_name>  --push the changes to the remote repo
+git pull origin <branch_name>  --pull the changes from the remote repo to the local repo
 
 */
