@@ -5,12 +5,16 @@ export class CartPage {
     private cartIcon: Locator;
     private checkoutButton: Locator;
     private inventoryItemNames: Locator;
+    private removeButton: Locator;
+    private removeItem:Locator;
 
     constructor(page: Page) {
         this.page = page;
         this.cartIcon = this.page.locator('.shopping_cart_link');
         this.checkoutButton = this.page.locator('#checkout');
         this.inventoryItemNames = this.page.locator('.inventory_item_name');
+        this.removeButton = this.page.locator('#remove-sauce-labs-backpack');
+        this.removeItem = this.page.locator(".cart_item_label>>a>div");
     }
 
     async openCart() {
@@ -19,6 +23,13 @@ export class CartPage {
 
     async verifyProductInCart(productName: string) {
         await expect(this.inventoryItemNames).toContainText(productName);
+    }
+
+    async removeProductFromCart(productName: string) {
+        const removeProduct:string |null=await this.removeItem.textContent();
+        if(removeProduct == productName)
+        {await this.removeButton.click();}
+
     }
 
     async clickCheckout() {
