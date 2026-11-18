@@ -8,6 +8,9 @@ export class HomePage {
     private menuButton : Locator;
     private logoutLink : Locator;
 
+    
+
+
     constructor(page: Page) {
         this.page = page;
         this.productsTitle = this.page.locator('.title');
@@ -15,6 +18,7 @@ export class HomePage {
         this.inventoryItemNames = this.page.locator('.inventory_item_name');
         this.menuButton = this.page.locator('#menu_button_container');
         this.logoutLink = this.page.locator('#logout_sidebar_link');
+        
     }
 
     async verifyHomePage() {
@@ -32,6 +36,27 @@ export class HomePage {
             .click();
     }
 
+    async sortProductsBy(option:string)
+    {
+ await this.sortDropdown.selectOption(option);
+    }
+
+    async verifyLowToHighSorting() {
+
+        const prices = await this.page
+            .locator('.inventory_item_price')
+            .allTextContents();
+
+        const actualPrices = prices.map(
+            price => Number(price.replace('$', ''))
+        );
+
+        const sortedPrices = [...actualPrices].sort(
+            (a, b) => a - b
+        );
+
+        expect(actualPrices).toEqual(sortedPrices);
+    }
     async logout() {
         await this.menuButton.click();
         await this.logoutLink.click();
