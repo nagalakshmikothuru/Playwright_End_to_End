@@ -1,6 +1,5 @@
 import { test } from '@playwright/test';
 import { LoginPage } from '../pages/LoginPage';
-import { userLoginCred } from '../utils/testData';
 
 test('Valid Login Test @smoke', async ({ page }) => {
 
@@ -9,22 +8,15 @@ test('Valid Login Test @smoke', async ({ page }) => {
 
     // Navigate to Application
     await loginPage.navigateToLoginPage();
-    await page.screenshot({
-        path: 'screenshots/login-before.png',
-        fullPage: true
-    });
 
     // Login with Valid Credentials
     await loginPage.login(
-        userLoginCred.standardUser,
-        userLoginCred.password
+        'standard_user',
+        'secret_sauce'
+
     );
 
     // Verify Login Success
     await loginPage.verifyLoginSuccess();
-    await page.screenshot({
-        path: 'screenshots/login-after.png',
-        fullPage: true
-    });
     //await page.pause();
 });

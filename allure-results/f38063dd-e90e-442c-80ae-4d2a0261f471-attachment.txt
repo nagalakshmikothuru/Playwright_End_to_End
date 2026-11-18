@@ -1,0 +1,14 @@
+usersData : {
+    "id": "standard-user",
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "expectedLogin": "success",
+    "lastTestStatus": "passed",
+    "lastTestedAt": "2026-11-18T11:46:16.563Z"
+  }
+data : [
+  { id: 'A1', user: 'A11' },
+  { id: 'A2', user: 'A22' },
+  { id: 'A3', user: 'A33' },
+  { id: 'A4', user: 'A44' }
+]

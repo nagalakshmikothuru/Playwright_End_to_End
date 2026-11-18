@@ -28,4 +28,8 @@ export class LoginPage {
     async verifyLoginSuccess() {
         await expect(this.page).toHaveURL(/inventory/);
     }
+
+    async verifyLoginFailure() {
+        await expect(this.errorMessage).toBeVisible();
+    }
 }

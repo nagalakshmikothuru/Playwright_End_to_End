@@ -1,0 +1,24 @@
+usersData : [{
+    
+    "username": "standard_user",
+    "password": "secret_sauce"
+    
+  },
+  {
+    "username": "locked_out_user",
+    "password": "secret_sauce"
+  },
+  {
+    "username": "problem_user",
+    "password": "secret_sauce"
+  },
+  {
+    "username": "performance_glitch_user",
+    "password": "secret_sauce"
+  }]
+data : [
+  { id: 'A1', user: 'A11' },
+  { id: 'A2', user: 'A22' },
+  { id: 'A3', user: 'A33' },
+  { id: 'A4', user: 'A44' }
+]
