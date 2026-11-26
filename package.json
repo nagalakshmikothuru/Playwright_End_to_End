@@ -21,3 +21,6 @@ jobs:
 
       - name: Check NPM Version
         run: npm -v
+
+         - name: Install Dependencies
+        run: npm install
