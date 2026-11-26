@@ -1,0 +1,41 @@
+usersData : [
+  {
+    "id": "standard-user",
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "expectedLogin": "success",
+    "lastTestStatus": "passed",
+    "lastTestedAt": "2026-11-18T14:47:38.416Z"
+  },
+  {
+    "id": "locked-out-user",
+    "username": "locked_out_user",
+    "password": "secret_sauce",
+    "expectedLogin": "failure",
+    "lastTestStatus": "passed",
+    "lastTestedAt": "2026-11-18T14:47:48.385Z"
+  },
+  {
+    "id": "problem-user",
+    "username": "problem_user",
+    "password": "secret_sauce",
+    "expectedLogin": "success",
+    "lastTestStatus": "passed",
+    "lastTestedAt": "2026-11-18T14:48:00.473Z"
+  },
+  {
+    "id": "performance-glitch-user",
+    "username": "performance_glitch_user",
+    "password": "secret_sauce",
+    "expectedLogin": "success",
+    "lastTestStatus": "passed",
+    "lastTestedAt": "2026-11-18T14:48:16.380Z"
+  }
+]
+
+data : [
+  { id: 'A1', user: 'A11' },
+  { id: 'A2', user: 'A22' },
+  { id: 'A3', user: 'A33' },
+  { id: 'A4', user: 'A44' }
+]

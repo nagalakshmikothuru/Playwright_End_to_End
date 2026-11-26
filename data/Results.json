@@ -1,4 +1,1 @@
-[{"id":"standard-user","status":"passed"}
-,{"id":"locked-out-user","status":"failed"}
-,{"id":"problem-user","status":"passed"},
-{"id":"performance-glitch-user","status":"passed"}]
+[{"id":"standard-user","status":"passed"},{"id":"locked-out-user","status":"failed"},{"id":"problem-user","status":"passed"},{"id":"performance-glitch-user","status":"passed"}]

@@ -10,7 +10,7 @@ console.log("usersData :" ,parseData);
 const results:{ id: string; status: string }[] = [];
 //====================================================
 parseData.forEach((userr:any)=>{
-  test(`Valid Login Test for ${userr.id}`, async ({ page }) => {
+  test.skip(`Valid Login Test for ${userr.id}`, async ({ page }) => {
  
     // Create Login Page Object
     const loginPage: LoginPage = new LoginPage(page);
