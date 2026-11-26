@@ -36,7 +36,7 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
-      - name: Run Playwright tests
+      - name: Run Playwright tests tests/orderFlow.spec.ts
         run: |
           $args = @("playwright", "test")
           if ($env:TEST_FILE) {
